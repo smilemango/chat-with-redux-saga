@@ -5,7 +5,7 @@ const Sidebar = ({ users }) => (
   <aside id='sidebar' className='sidebar'>
     <ul>
       {users.map(user => (
-        <li key={user.id}>{user.name}</li>
+        <li key={user.id} user_id={user.id}>{user.name}</li>
       ))}
     </ul>
   </aside>
